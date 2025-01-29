@@ -13,7 +13,6 @@ USE alx_book_store;
 -- Create a cursor object
 mycursor = mydb.cursor()
 
--- Write description of table Books without using DESCRIBE or EXPLAIN
 -- Write SQL query to fetch table structure
 table_name = "Books"
 sql = f"""
