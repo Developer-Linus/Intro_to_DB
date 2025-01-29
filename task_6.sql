@@ -28,6 +28,26 @@ mydb.commit();
 
 print(mycursor.rowcount, "record inserted.")
 
+-- Second entry
+val = ("Blessing Malik", "bmalik@sandtech.com", "124 Happiness  Ave.")
+mycursor.execute(sql, val)
+mydb.commit();
+
+print(mycursor.rowcount, "record inserted.")
+
+-- Third entry
+val = ("Obed Ehoneah", "eobed@sandtech.com", "125 Happiness  Ave.")
+mycursor.execute(sql, val)
+mydb.commit();
+
+print(mycursor.rowcount, "record inserted.")
+
+-- Fourth Entry
+val = ("Nehemial Kamolu", "nkamolu@sandtech.com", "126 Happiness  Ave.")
+mycursor.execute(sql, val)
+mydb.commit();
+
+print(mycursor.rowcount, "record inserted.")
 -- Close the cursor and database connection
 mycursor.close()
 mydb.close()
