@@ -25,7 +25,7 @@ ORDER BY ORDINAL_POSITION
 mycursor.execute(sql)
 
 -- Print the table structure
-print(f"Structure of table `{table_name}`:")
+print(f"Structure of table `{TABLE_NAME}`:")
 print("----------------------------------------------------------------------------")
 print(f"{'Column Name':<20}{'Column Type':<20}{'Data Type':<15}{'Max Length':<15}{'Nullable':<10}{'Key':<10}")
 print("----------------------------------------------------------------------------")
