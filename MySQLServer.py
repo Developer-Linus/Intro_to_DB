@@ -1,12 +1,13 @@
 import mysql.connector
-
-# Create a connection object (without specifying the database)
-mydb = mysql.connector.connect(
-    host="localhost",
-    user="root",
-    password="Langat@2025!!!",
-    raise_on_warnings=True  # Raise error for failed connection
-)
+try:
+    # Create a connection object (without specifying the database)
+    mydb = mysql.connector.connect(
+        host="localhost",
+        user="root",
+        password="Langat@2025!!!",
+    )
+except mysql.connector.Error as err:
+    print(err)
 
 # Create a cursor object
 mycursor = mydb.cursor()
