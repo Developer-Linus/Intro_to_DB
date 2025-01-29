@@ -12,7 +12,7 @@ mydb = mysql.connector.connect(
 mycursor = mydb.cursor()
 
 -- Creating Customers table
-mycursor.execute("""CREATE TABLE IF NOT EXISTS Customers (
+mycursor.execute("""CREATE TABLE IF NOT EXISTS customer (
     customer_id INT AUTO_INCREMENT PRIMARY KEY,
     customer_name VARCHAR(215) NOT NULL,
     email VARCHAR(215) UNIQUE NOT NULL,
@@ -20,7 +20,7 @@ mycursor.execute("""CREATE TABLE IF NOT EXISTS Customers (
 )""");
 
 -- INSERT data into Customers table
-sql = "INSERT INTO Customers (customer_name, email, address) VALUES (%s, %s, %s)"
+sql = "INSERT INTO customer (customer_name, email, address) VALUES (%s, %s, %s)"
 val = ("Cole Baidoo", "cbaidoo@sandtech.com", "123 Happiness Ave.")
 mycursor.execute(sql, val)
 mydb.commit();
