@@ -5,8 +5,9 @@ mydb = mysql.connector.connect(
     host="localhost",
     user="root",
     password="Langat@2025!!!",
-    database="alx_book_store"
 )
+-- SELECT DATABASE
+USE alx_book_store;
 
 -- Create a cursor object
 mycursor = mydb.cursor()
