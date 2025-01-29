@@ -14,11 +14,11 @@ USE alx_book_store;
 mycursor = mydb.cursor()
 
 -- Write SQL query to fetch table structure
-TABLE_NAME = "Books"
+
 sql = f"""
 SELECT COLUMN_NAME, COLUMN_TYPE, DATA_TYPE, CHARACTER_MAXIMUM_LENGTH, IS_NULLABLE, COLUMN_KEY 
 FROM INFORMATION_SCHEMA.COLUMNS
-WHERE TABLE_SCHEMA = 'alx_book_store' AND TABLE_NAME = '{TABLE_NAME}'
+WHERE TABLE_SCHEMA = 'alx_book_store' AND TABLE_NAME = 'TABLE_NAME = "Books"'
 ORDER BY ORDINAL_POSITION
 """
 -- Execute the SQL QUERY
